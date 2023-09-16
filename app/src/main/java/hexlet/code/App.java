@@ -13,7 +13,7 @@ public class App {
         System.out.println("Your choice: " + choiceNum + "\n");
 
         if (choiceNum != 0) {
-            Cli.getName();
+            Cli.sayName();
         }
         if (choiceNum == 2) {
             Even.checkEven();

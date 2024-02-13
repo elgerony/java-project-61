@@ -12,7 +12,7 @@ public class App {
         int choiceNum = choice.nextInt();
         System.out.println("Your choice: " + choiceNum + "\n");
 
-        if (choiceNum != 0) {
+        if (choiceNum == 1) {
             Cli.sayName();
         }
         if (choiceNum == 2) {

@@ -4,9 +4,13 @@ import java.util.Random;
 import hexlet.code.Cli;
 public class Even {
     public static void checkEven() {
-       var userName = new Cli();
 
-       var scanAnswer = new Scanner(System.in);
+        var scanner = new Scanner(System.in);
+        var scanAnswer = new Scanner(System.in);
+        System.out.println("Welcome to the Brain Games!");
+        System.out.print("What is your name? ");
+        String userName = scanner.next();
+        System.out.println("Hello, " + userName + "!");
         System.out.println("Answer 'yes' if the number is even, otherwise answer 'no'.");
 
         int i = 0; // for counting games
@@ -26,14 +30,14 @@ public class Even {
                 System.out.println("\n" + message);
                 i++;
                 if (i == 3) {
-                    System.out.println("Congratulations, " + userName + " !");
+                    System.out.println("Congratulations, " + userName + "!");
                 }
             }
             else {  // message for wrong answer
                 message = "Answer '" + userAnswer + "' is wrong answer ;(. Correct answer was '"
                         + correctAnswer + "'.";
                 System.out.println("\n" + message);
-                System.out.println("Let's try again, " + userName + " !");
+                System.out.println("Let's try again, " + userName + "!");
                 break;
             }
 

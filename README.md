@@ -4,3 +4,4 @@
 
 EvenGame -   https://asciinema.org/a/5EJOwEf6eNIKLByp8hqMpPDNS
 CalcGame -   https://asciinema.org/a/5x7JOJYpPAG8JX38l4JUKot6Q
+GCDGame -  https://asciinema.org/a/bugJnnrlC07qOeCbEbNiaFhaQ

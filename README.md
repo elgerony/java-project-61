@@ -10,3 +10,4 @@ GCDGame -  https://asciinema.org/a/bugJnnrlC07qOeCbEbNiaFhaQ
 
 ProgressionGame - https://asciinema.org/a/uMvegz0kUegkBOXfJwVBOMIVr  
 
+PrimeGame - https://asciinema.org/a/heN68PKoLbcrXuy5EADSUdJbQ

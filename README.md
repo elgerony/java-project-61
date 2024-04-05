@@ -3,5 +3,10 @@
 <a href="https://codeclimate.com/github/elgerony/java-project-61/maintainability"><img src="https://api.codeclimate.com/v1/badges/652e7d63ed7e2613c8c4/maintainability" /></a>
 
 EvenGame -   https://asciinema.org/a/5EJOwEf6eNIKLByp8hqMpPDNS
+								
 CalcGame -   https://asciinema.org/a/5x7JOJYpPAG8JX38l4JUKot6Q
+								
 GCDGame -  https://asciinema.org/a/bugJnnrlC07qOeCbEbNiaFhaQ
+
+ProgressionGame - https://asciinema.org/a/uMvegz0kUegkBOXfJwVBOMIVr  
+

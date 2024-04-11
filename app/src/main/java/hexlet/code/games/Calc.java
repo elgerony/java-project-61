@@ -1,6 +1,7 @@
 package hexlet.code.games;
 import hexlet.code.Engine;
-import java.util.Random;
+import hexlet.code.Utils;
+
 
 public class Calc {
     public static void calcGame() {
@@ -14,37 +15,28 @@ public class Calc {
     public static String[] randomQuestion() {
         int min = 1; // min number in game
         int max = 100; // max number in game
-        int randomInt1 = new Random().nextInt(max - min) + min;
-        int randomInt2 = new Random().nextInt(max - min) + min;
+        int randomInt1 = Utils.generateRandom(min, max);
+        int randomInt2 = Utils.generateRandom(min, max);;
         char operator = randomOperator();
-        char operatorWeGot;
-        int result;
-        switch (operator) {
-            case '-' -> {
-                operatorWeGot = '-';
-                result = randomInt1 - randomInt2;
-            }
-            case '+' -> {
-                operatorWeGot = '+';
-                result = randomInt1 + randomInt2;
-            }
-            case '*' -> {
-                operatorWeGot = '*';
-                result = randomInt1 * randomInt2;
-            }
-            default -> throw new IllegalStateException("Unexpected value: " + operator);
-        };
-        String question = "Question: " + randomInt1 + " " + operatorWeGot + " " + randomInt2;
+        var result = calculate(randomInt1, randomInt2, operator);
         String correctAnswer = String.valueOf(result);
+        String question = "Question: " + randomInt1 + " " + operator + " " + randomInt2;
         return new String[]{question, correctAnswer};
     }
     public static char randomOperator() {
         int min = 0;
         int max = 2;
-        int randomOp = new Random().nextInt(max - min) + min;
+        int randomOp = Utils.generateRandom(min, max);
         char[] operators = {'-', '+', '*'};
         return operators[randomOp];
     }
 
-
+    private static int calculate(int randomInt1, int randomInt2, char operator) {
+        return switch (operator) {
+            case '-' -> randomInt1 - randomInt2;
+            case '+' -> randomInt1 + randomInt2;
+            case '*' -> randomInt1 * randomInt2;
+            default -> throw new IllegalStateException("Unexpected value!");
+        };
+    }
 }

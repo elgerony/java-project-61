@@ -1,8 +1,8 @@
 package hexlet.code.games;
 
 import hexlet.code.Engine;
+import hexlet.code.Utils;
 
-import java.util.Random;
 
 public class Prime {
     public static void checkPrime() {
@@ -16,7 +16,7 @@ public class Prime {
     public static String[] randomQuestion() {
         int min = 1; // min number in game
         int max = 20; // max number in game
-        int randomInt = new Random().nextInt(max - min) + min;
+        int randomInt = Utils.generateRandom(min, max);
         String question = "" + randomInt;
         boolean isPrime = isPrime(randomInt);
         String correctAnswer = isPrime ? "yes" : "no";

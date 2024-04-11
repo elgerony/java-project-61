@@ -17,6 +17,5 @@ CalcGame -   [![asciicast](https://asciinema.org/a/5x7JOJYpPAG8JX38l4JUKot6Q.svg
 GCDGame -  [![asciicast](https://asciinema.org/a/bugJnnrlC07qOeCbEbNiaFhaQ.svg)](https://asciinema.org/a/bugJnnrlC07qOeCbEbNiaFhaQ)
 
 ProgressionGame - [![asciicast](https://asciinema.org/a/uMvegz0kUegkBOXfJwVBOMIVr.svg)](https://asciinema.org/a/uMvegz0kUegkBOXfJwVBOMIVr)  
->>>>>>> origin/main
 
 PrimeGame - [![asciicast](https://asciinema.org/a/heN68PKoLbcrXuy5EADSUdJbQ.svg)](https://asciinema.org/a/heN68PKoLbcrXuy5EADSUdJbQ)
